@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand mb-0 h1">Weather</span>
+      </nav>
+
+    <main class="row">
+        <aside class="col-3">
+            <!-- button and search -->
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Weather Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="inputCity">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button" id="btn">Button</button>
+                </div>
+              </div>
+        </aside>
+        <section class="col-9">
+            <div class="row">
+                <div class="container">
+                    <p>City: <span id="city"></span></p> <br>
+                    <p>temperature: <span id="temperature"></span></p><br>
+                    <p>wind: <span id="wind"></span></p><br>
+                    <p>humidity: <span id="humidity"></span></p><br>
+                    <p>UV: <span id="UV"></span></p><br>
+                </div>
+            </div>
+            <div class="row">
+                <!-- cards for 5 day -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
